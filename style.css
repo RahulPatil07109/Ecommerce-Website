@@ -78,7 +78,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 700;
-  height: 84.5px;
+  /* height: 84.5px; */
   width: 100%;
   transition: 0.4s ease;
 }
@@ -121,6 +121,13 @@ body {
   left: 20px;
   bottom: -4px;
   background: #088178;
+}
+#mobile {
+  display: none;
+  align-items: center;
+}
+#bar2 {
+  display: none;
 }
 /* hero section */
 #hero {
@@ -391,6 +398,7 @@ body {
 
 #newsletter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-image: url("img/banner/b14.png");
@@ -487,4 +495,121 @@ footer a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
+}
+
+/* Responsiveness */
+
+@media (max-width: 811px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.4s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #lg-bag {
+    display: none;
+  }
+  #bar2 {
+    display: initial;
+    color: #1a1a1a;
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  #hero {
+    height: 70vh;
+    width: 100%;
+    background-position: top 30% right 30%;
+  }
+  #banner {
+    height: 20vh;
+  }
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+  }
+  #banner3 {
+    padding: 0 40px;
+  }
+  #banner3 .banner-box {
+    width: 28%;
+  }
+  #newsletter .form {
+    width: 70%;
+  }
+  footer .install .row img {
+    border: 2px solid #088178;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+  #header {
+    padding: 10px 30px;
+  }
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+    margin-top: 57px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  #feature .fe-box {
+    width: 157px;
+  }
+  #product1 .pro {
+    width: 100%;
+  }
+  #banner {
+    height: 40vh;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0 20px;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+  #newsletter {
+    padding: 40px 20px;
+  }
 }
