@@ -316,6 +316,7 @@ body {
   flex-wrap: wrap;
 }
 #sm-banner .banner-box {
+  width: 49%;
   min-width: 580px;
   height: 50vh;
   display: flex;
